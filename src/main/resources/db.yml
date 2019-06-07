@@ -1,3 +1,116 @@
 # RECOMENDABLE SOLO AÑADIR
 
-# Usuarios
+# Users
+# mobiles: 666666000 a 666666666 RESERVADOS AQUI
+userList:
+- &us0
+  mobile: 666666000
+  username: u000
+  password: p000
+  email: u000@gmail.com
+  dni: null
+  address: C/ TPV, 0, 1A, 28000 Madrid
+  roles:
+  - ADMIN
+  - MANAGER
+  - OPERATOR
+- mobile: 666666001
+  username: u001
+  password: p001
+  email: u001@gmail.com
+  dni: 66666600L
+  address: C/ TPV, 1, 1A, 28000 Madrid
+  roles:
+  - MANAGER
+- mobile: 666666002
+  username: u002
+  password: p002
+  email: u005@gmail.com
+  dni: 66666605R
+  address: C/ TPV, 5, 1A, 28000 Madrid
+  roles:
+  - OPERATOR
+- mobile: 666666003
+  username: u003
+  password: p003
+  dni: 66666603E
+  address: C/ TPV, 3, 1A, 28000 Madrid
+  roles:
+  - OPERATOR
+- &us4
+  mobile: 666666004
+  username: u004
+  password: p004
+  email: u004@gmail.com
+  dni: 66666604T
+  address: C/ TPV, 4, 1A, 28000 Madrid
+  roles:
+  - CUSTOMER
+- &us5
+  mobile: 666666005
+  username: u005
+  password: p005
+  email: u005@gmail.com
+  dni: 66666605R
+  address: C/ TPV, 5, 1A, 28000 Madrid
+  roles:
+  - CUSTOMER
+- &us6
+  mobile: 123456789
+  username: uprueba
+  password: pprueba
+  email: uprueba@gmail.com
+  dni: 111111
+  address: Cuenca, Ecuador
+  roles:
+  - OPERATOR
+  - CUSTOMER
+- &us7
+  mobile: 1987654321
+  username: uprueba2
+  password: pprueba2
+  email: uprueba2@gmail.com
+  dni: 1111111
+  address: Cuenca,Ecuador
+  roles:
+  - ADMIN
+  - MANAGER
+  - OPERATOR
+- &us8
+  mobile: 099738470
+  username: uprueba3
+  password: pprueba3
+  email: uprueba3@gmail.com
+  dni: 222222
+  address: Cuenca,Ecuador
+  roles:
+  - MANAGER
+  - OPERATOR
+- &us9
+  mobile: 666666110
+  username: uprueba4
+  password: pprueba4
+  email: uprueba4@gmail.com
+  dni: 2222224
+  address: Cuenca,Ecuador
+  roles:
+  - OPERATOR
+  - CUSTOMER
+- &us10
+  mobile: 666666120
+  username: uprueba5
+  password: pprueba5
+  email: uprueba5@gmail.com
+  dni: 2222224
+  address: Cuenca,Ecuador
+  roles:
+  - OPERATOR
+- &us11
+  mobile: 666666122
+  username: uprueba6
+  password: pprueba6
+  email: uprueba6@gmail.com
+  dni: 2222224
+  address: Cuenca,Ecuador
+  roles:
+  - MANAGER
