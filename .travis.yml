@@ -1,0 +1,16 @@
+language: java
+jdk:
+- oraclejdk8
+branches:
+  only:
+  - master
+  - develop
+notifications:
+  email:
+    recipients:
+    - dennys.landy@hotmail.com
+services:
+  - mongodb
+script:
+#Test unitario y de integracion en develop
+- mvn verify
