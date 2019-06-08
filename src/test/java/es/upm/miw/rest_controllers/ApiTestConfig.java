@@ -1,4 +1,4 @@
-package miw.restControllers;
+package es.upm.miw.rest_controllers;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.extension.ExtendWith;
