@@ -44,12 +44,7 @@ public class UserController {
         if (claimRoles.contains(Role.ADMIN.roleName()) || claimMobile.equals(userMobile)) {
             return;
         }
-        if (claimRoles.contains(Role.MANAGER.roleName())
-                && !userRoles.contains(Role.ADMIN.roleName()) && !userRoles.contains(Role.MANAGER.roleName())) {
-            return;
-        }
-        if (claimRoles.contains(Role.OPERATOR.roleName())
-                && userRoles.stream().allMatch(role -> role.equals(Role.CUSTOMER.roleName()))) {
+        if (claimRoles.contains(Role.CUSTOMER.roleName())) {
             return;
         }
         throw new ForbiddenException("User mobile (" + userMobile + ")");

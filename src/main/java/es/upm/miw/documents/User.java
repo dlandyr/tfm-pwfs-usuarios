@@ -14,22 +14,14 @@ public class User {
 
     @Id
     private String id;
-
     @Indexed(unique = true)
     private String mobile;
-
     private LocalDateTime registrationDate;
-
     private String username;
-
     private String password;
-
     private Boolean active;
-
     private String email;
-
     private String dni;
-
     private String address;
 
     private Role[] roles;

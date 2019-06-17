@@ -19,10 +19,6 @@ import java.util.Arrays;
 @Service
 public class DatabaseSeederService {
 
-    private static final String VARIOUS_CODE = "1";
-
-    private static final String VARIOUS_NAME = "Varios";
-
     @Autowired
     private Environment environment;
 
@@ -60,9 +56,8 @@ public class DatabaseSeederService {
 
     public void deleteAllAndInitialize() {
         LogManager.getLogger(this.getClass()).warn("------- Delete All -----------");
-        // Delete Repositories -----------------------------------------------------
+        // Delete Repositories
         this.userRepository.deleteAll();
-        // -------------------------------------------------------------------------
         this.initialize();
     }
 
@@ -88,11 +83,8 @@ public class DatabaseSeederService {
     public void seedDatabase(InputStream input) {
         Yaml yamlParser = new Yaml(new Constructor(DatabaseGraph.class));
         DatabaseGraph tpvGraph = yamlParser.load(input);
-
-        // Save Repositories -----------------------------------------------------
+        // Save Repositories
         this.userRepository.saveAll(tpvGraph.getUserList());
-        // -----------------------------------------------------------------------
-
         LogManager.getLogger(this.getClass()).warn("------- Seed...   " + "-----------");
     }
 

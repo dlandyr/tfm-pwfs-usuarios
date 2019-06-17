@@ -1,116 +1,105 @@
-# RECOMENDABLE SOLO AÑADIR
-
 # Users
-# mobiles: 666666000 a 666666666 RESERVADOS AQUI
 userList:
 - &us0
-  mobile: 666666000
-  username: u000
-  password: p000
-  email: u000@gmail.com
-  dni: null
-  address: C/ TPV, 0, 1A, 28000 Madrid
+  mobile: 666744679
+  username: dlandy
+  password: dennys123
+  email: dennys.landy@hotmail.com
+  dni: 01051397A
+  address: Calle Alora 10, Madrid
   roles:
   - ADMIN
-  - MANAGER
-  - OPERATOR
-- mobile: 666666001
-  username: u001
-  password: p001
-  email: u001@gmail.com
-  dni: 66666600L
-  address: C/ TPV, 1, 1A, 28000 Madrid
+  - CUSTOMER
+- &us1
+  mobile: 685456125
+  username: jromero
+  password: juan123
+  email: juan.romero@gmail.com
+  dni: 01045856C
+  address: Calle de San Pedro 52, Madrid
   roles:
-  - MANAGER
-- mobile: 666666002
-  username: u002
-  password: p002
-  email: u005@gmail.com
-  dni: 66666605R
-  address: C/ TPV, 5, 1A, 28000 Madrid
+  - CUSTOMER
+- &us2
+  mobile: 686758254
+  username: alortega
+  password: alex555
+  email: alex.ortega@hotmail.com
+  dni: 01052368F
+  address: Calle Embajadores 45, Madrid
   roles:
-  - OPERATOR
-- mobile: 666666003
-  username: u003
-  password: p003
-  dni: 66666603E
-  address: C/ TPV, 3, 1A, 28000 Madrid
+  - CUSTOMER
+- &us3
+  mobile: 685236571
+  username: dsarmiento
+  password: diego444
+  email: diego.sarmiento@gmail.com
+  dni: 01052365G
+  address: Calle Carnero 28, Madrid
   roles:
-  - OPERATOR
+  - CUSTOMER
 - &us4
-  mobile: 666666004
-  username: u004
-  password: p004
-  email: u004@gmail.com
-  dni: 66666604T
-  address: C/ TPV, 4, 1A, 28000 Madrid
+  username: luis85
+  password: luis123
+  email: luis.lucero@hotmail.com
+  dni: 66665252H
+  address: Calle de Toledo 95, Madrid
   roles:
   - CUSTOMER
 - &us5
-  mobile: 666666005
-  username: u005
-  password: p005
-  email: u005@gmail.com
-  dni: 66666605R
-  address: C/ TPV, 5, 1A, 28000 Madrid
+  mobile: 666859444
+  username: xime2000
+  password: rubio123456
+  email: xime.romero@gmail.com
+  dni: 33345856M
+  address: Calle del Almendro 45, Cuenca
   roles:
   - CUSTOMER
 - &us6
-  mobile: 123456789
-  username: uprueba
-  password: pprueba
-  email: uprueba@gmail.com
-  dni: 111111
-  address: Cuenca, Ecuador
-  roles:
-  - OPERATOR
-  - CUSTOMER
-- &us7
-  mobile: 1987654321
-  username: uprueba2
-  password: pprueba2
-  email: uprueba2@gmail.com
-  dni: 1111111
-  address: Cuenca,Ecuador
+  mobile: 652365888
+  username: david87
+  password: dzeas001
+  email: david.zeas@hotmail.com
+  dni: 66655541R
+  address: Calle Pablo Neruda 68, Toledo
   roles:
   - ADMIN
-  - MANAGER
-  - OPERATOR
+  - CUSTOMER
+- &us7
+  mobile: 622265444
+  username: julia65
+  password: orellana555
+  email: julia.orellana@gmail.com
+  dni: 22255544F
+  address: Calle Barcelo 105, Salamanca
+  roles:
+  - ADMIN
+  - CUSTOMER
 - &us8
-  mobile: 099738470
-  username: uprueba3
-  password: pprueba3
-  email: uprueba3@gmail.com
-  dni: 222222
-  address: Cuenca,Ecuador
+  mobile: 655222122
+  username: isabel96
+  password: isa555
+  email: isabel.zeas@hotmail.com
+  dni: 66655542A
+  address: Calle Fuencarral 120, Madrid
   roles:
-  - MANAGER
-  - OPERATOR
+  - ADMIN
+  - CUSTOMER
 - &us9
-  mobile: 666666110
-  username: uprueba4
-  password: pprueba4
-  email: uprueba4@gmail.com
-  dni: 2222224
-  address: Cuenca,Ecuador
+  mobile: 666995877
+  username: pablo92
+  password: palvarado92
+  email: pablo.alvarado@gmail.com
+  dni: 66633325C
+  address: Calle Luis Usera 44, Madrid
   roles:
-  - OPERATOR
+  - ADMIN
   - CUSTOMER
 - &us10
-  mobile: 666666120
-  username: uprueba5
-  password: pprueba5
-  email: uprueba5@gmail.com
-  dni: 2222224
-  address: Cuenca,Ecuador
+  mobile: 685222184
+  username: josel05
+  password: josleon222
+  email: jose.leon@hotmail.com
+  dni: 66674524F
+  address: Calle Antonio Prieto 155, Madrid
   roles:
-  - OPERATOR
-- &us11
-  mobile: 666666122
-  username: uprueba6
-  password: pprueba6
-  email: uprueba6@gmail.com
-  dni: 2222224
-  address: Cuenca,Ecuador
-  roles:
-  - MANAGER
+  - CUSTOMER
