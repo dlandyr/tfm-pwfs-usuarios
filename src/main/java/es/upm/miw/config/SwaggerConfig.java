@@ -29,11 +29,10 @@ public class SwaggerConfig {
                 .securitySchemes(this.schemeList())
                 .securityContexts(this.securityContext());
     }
-
-    // http://localhost:8080/api/v0/swagger-ui.html
+    /* http://localhost:8080/api/v0/swagger-ui.html */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("MIW. Universidad Politécnica de Madrid")
-                .description("TFM. PWFS - Microservicio de Usuarios " + "https://github.com/dlandyr/tfm-pwfs-usuarios").build();
+                .description("TFM. PWFS - Microservicio de Usuarios. - " + "https://github.com/dlandyr/tfm-pwfs-usuarios").build();
     }
 
     private List<SecurityScheme> schemeList() {
@@ -54,5 +53,4 @@ public class SwaggerConfig {
                 SecurityContext.builder().securityReferences(
                         BearerSecurityReferences).forPaths(PathSelectors.any()).build());
     }
-
 }
