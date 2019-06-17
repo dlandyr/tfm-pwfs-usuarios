@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@PreAuthorize("hasRole('ADMIN') or hasRole('MANAGER') or hasRole('OPERATOR')")
+@PreAuthorize("hasRole('ADMIN') or hasRole('CUSTOMER')")
 @RestController
 @RequestMapping(UserResource.USERS)
 public class UserResource {

@@ -19,8 +19,6 @@ import java.util.List;
 @Transactional
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    public static final String P_TOKEN = "";
-
     @Autowired
     private UserRepository userRepository;
 
@@ -29,11 +27,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user = userRepository.findByMobile(mobile)
                 .orElseThrow(() -> new UsernameNotFoundException("mobile not found. " + mobile));
         return this.userBuilder(user.getMobile(), user.getPassword(), new Role[]{Role.AUTHENTICATED}, user.isActive());
-
     }
 
-    private org.springframework.security.core.userdetails.User userBuilder(String mobile, String password, Role[] roles,
-                                                                           boolean active) {
+    private org.springframework.security.core.userdetails.User userBuilder(String mobile, String password, Role[] roles, boolean active) {
         List<GrantedAuthority> authorities = new ArrayList<>();
         for (Role role : roles) {
             authorities.add(new SimpleGrantedAuthority(role.roleName()));

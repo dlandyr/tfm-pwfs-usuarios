@@ -1,7 +1,6 @@
 package es.upm.miw.data_services;
 
 import es.upm.miw.documents.User;
-
 import java.util.ArrayList;
 import java.util.List;
 
