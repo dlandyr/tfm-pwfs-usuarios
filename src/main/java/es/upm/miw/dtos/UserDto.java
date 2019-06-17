@@ -12,13 +12,9 @@ import java.util.Arrays;
 public class UserDto extends UserMinimumDto {
 
     private String email;
-
     private String dni;
-
     private String address;
-
     private Boolean active;
-
     private Role[] roles;
 
     private LocalDateTime registrationDate;
