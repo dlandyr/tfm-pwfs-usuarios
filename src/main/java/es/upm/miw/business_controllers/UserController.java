@@ -37,7 +37,7 @@ public class UserController {
                 .orElseThrow(() -> new NotFoundException("User mobile:" + mobile));
         this.authorized(claimMobile, claimRoles, mobile, Arrays.stream(user.getRoles())
                 .map(Role::roleName).collect(Collectors.toList()));
-        return new UserDto(user);
+        return new UserDto();
     }
 
     private void authorized(String claimMobile, List<String> claimRoles, String userMobile, List<String> userRoles) {

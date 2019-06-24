@@ -23,16 +23,6 @@ public class UserDto extends UserMinimumDto {
         // Empty for framework
     }
 
-    public UserDto(User user) {
-        super(user.getMobile(), user.getUsername());
-        this.email = user.getEmail();
-        this.dni = user.getDni();
-        this.address = user.getAddress();
-        this.active = user.isActive();
-        this.roles = user.getRoles();
-        this.registrationDate = user.getRegistrationDate();
-    }
-
     public String getEmail() {
         return email;
     }
