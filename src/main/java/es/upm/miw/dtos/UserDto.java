@@ -27,24 +27,48 @@ public class UserDto extends UserMinimumDto {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getDni() {
         return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public Boolean isActive() {
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Boolean getActive() {
         return active;
     }
 
-    public LocalDateTime getRegistrationDate() {
-        return this.registrationDate;
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 
     public Role[] getRoles() {
-        return this.roles;
+        return roles;
+    }
+
+    public void setRoles(Role[] roles) {
+        this.roles = roles;
+    }
+
+    public LocalDateTime getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(LocalDateTime registrationDate) {
+        this.registrationDate = registrationDate;
     }
 
     @Override
